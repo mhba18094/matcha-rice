@@ -1,0 +1,70 @@
+! Base colors
+
+! Google Material Design
+
+*background 		: #263238
+*foreground 		: #eceff1
+
+! black
+*color0  			: #263238
+*color8  			: #37474f
+! red
+*color1  			: #ff9800
+*color9  			: #ffa74d
+! green
+*color2  			: #8bc34a
+*color10 			: #9ccc65
+! yellow
+*color3  			: #ffc107
+*color11 			: #ffa000
+! blue
+*color4  			: #03a9f4
+*color12 			: #81d4fa
+! magenta
+*color5  			: #e91e63
+*color13 			: #ad1457
+! cyan
+*color6  			: #009688
+*color14 			: #26a69a
+! white
+*color7  			: #cfd8dc
+*color15 			: #eceff1
+
+! xterm
+xterm*termName: xterm-256color
+xterm*font: monospace
+xterm*faceName: monospace:size=11
+xterm*loginShell: true
+xterm*vt100*geometry: 90x34
+xterm*saveLines: 2000
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*eightBitInput: false
+
+! copy-paste
+XTerm.vt100.translations: #override \n\
+	Ctrl Shift <KeyPress> C: copy-selection(CLIPBOARD) \n\
+	Ctrl Shift <KeyPress> V: insert-selection(CLIPBOARD)
+
+! URxvt
+URxvt*saveline: 15000
+URxvt*termName: rxvt-256color
+URxvt*iso14755: false
+URxvt*depth: 32
+URxvt*background: [95]#1C2023
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*internalBorder: 0
+URxvt*externalBorder: 0
+URxvt*letterSpace: -1
+URxvt.font: xft:monospace:size=11
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.urlLauncher: exo-open
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+URxvt.geometry: 90x34
+URxvt.tabbed.tabbar-fg: 4
+URxvt.tabbed.tabbar-bg: 16
+URxvt.tabbed.tab-fg: 15
+URxvt.tabbed.tab-bg: 4
+URxvt*buffered: false
